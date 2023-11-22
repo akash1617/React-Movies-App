@@ -1,0 +1,135 @@
+body{
+  background-color: lightcoral;
+}
+
+.beforemaping{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /* border: 1px solid red; */
+  /* padding: 1rem; */
+  margin: 5px ;
+}
+.heading{
+  height: 13vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background:linear-gradient(rgba(114, 8, 8, 0.685),rgba(223, 86, 86, 0.466));
+  background-size: cover;
+  background-position: center;
+}
+h1{
+  margin-left: 400px;
+  font-size: 35px;
+  color: #fff;
+  /* background-color: aqua; */
+  /* padding: .5rem .8rem; */
+}
+form input{
+font-size: 20px;
+padding: .5rem .8rem;
+border-radius: 5px;
+border: none;
+outline: none;
+margin-right: 10px;
+}
+i{
+  font-size: 25px;
+  color: #fff;
+}
+.maping{
+  width: 300px;
+  justify-content: center;
+  height: 420px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 18px auto;
+  position: relative;
+  background-color: rgba(172, 85, 85, 0.861);
+  color: #fff;
+transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+box-shadow: 0 4px 6px rgb(224, 16, 16);
+}
+.maping:hover {
+  transform: scale(1.05); /* Enlarge the card on hover */
+  box-shadow: 0 8px 12px rgb(216, 94, 6);
+}
+
+.maping img{
+  width: 100%;
+  height: 360px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.titlevote{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .1rem .3rem;
+  margin-top: -10px;
+}
+
+.overview {
+  display: none;
+  padding: 10px;
+  font-size: 18px;
+  color: #fff;
+  position: absolute;
+  top: 0; /* Align to the bottom */
+  left: 0;
+  right: 0;
+  background: rgba(190, 94, 94, 0.792);
+  transition: transform 0.3s ease;
+  transform: translateY(100%);
+}
+
+.maping:hover .overview{
+  display: block;
+  transform: translateY(0);
+}
+p{
+  font-size: 25px;
+  margin-top: -5px;
+  margin-bottom: 10px;
+}
+
+.btn{
+  padding:0.9rem;
+  border:none ;
+  border-radius: 1rem;
+  margin: 1rem;
+  font-size: 20px;
+  background-color: #f12b2bae;
+}
+
+
+
+
+@media screen and (max-width:426px){
+.heading{
+  height: 11vh;
+  /* display: flex; */
+  flex-direction: column;
+  position: sticky;
+  left: 0;
+  top: 0;
+  z-index: 100;
+}   
+h1{
+  font-size: 25px;
+  margin-left: 0;
+  margin-top: -5px;
+  margin-bottom: -10px;
+}
+form input{
+  font-size: 10px;
+  padding: .5rem .8rem;
+  border-radius: 5px;
+  }
+  i{
+      font-size: 15px;
+      color: #fff;
+  }
+}
