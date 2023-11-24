@@ -1,11 +1,13 @@
 
 import './App.css';
-import Movieapi from './movieapi';
+import Footer from './component/Footer';
+import NewMovieApp from './component/NewMovieApp';
 
 function App() {
   return (
     <div className="App">
-      <Movieapi/>
+      <NewMovieApp/>
+      <Footer/>
     </div>
   );
 }

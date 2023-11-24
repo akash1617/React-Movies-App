@@ -66,3 +66,11 @@
   100% { content: "100%"}
 }
 
+
+
+@media screen and (max-width: 768px){
+  .loader{
+    top:45%;
+  left: 20%;
+  }
+}

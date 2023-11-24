@@ -1,5 +1,5 @@
 body{
-  background-color: lightcoral;
+  background-image: url("./assets//bg.jpg");
 }
 
 .beforemaping{
@@ -16,7 +16,11 @@ body{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background:linear-gradient(rgba(114, 8, 8, 0.685),rgba(223, 86, 86, 0.466));
+  /* background: linear-gradient(rgba(173, 216, 230, 0.8), rgba(30, 144, 255, 0.5)); */
+  background: linear-gradient(rgba(147, 112, 219, 0.8), rgba(30, 144, 255, 0.3));
+
+
+
   background-size: cover;
   background-position: center;
 }
@@ -47,14 +51,14 @@ i{
   border-radius: 5px;
   margin: 18px auto;
   position: relative;
-  background-color: rgba(172, 85, 85, 0.861);
+  background-color: rgba(147, 112, 219, 0.8);
   color: #fff;
 transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-box-shadow: 0 4px 6px rgb(224, 16, 16);
+box-shadow: 0 4px 6px rgba(30, 144, 255, 0.5);
 }
 .maping:hover {
   transform: scale(1.05); /* Enlarge the card on hover */
-  box-shadow: 0 8px 12px rgb(216, 94, 6);
+  box-shadow: 0 8px 12px rgba(30, 144, 255, 0.5);
 }
 
 .maping img{
@@ -65,22 +69,30 @@ box-shadow: 0 4px 6px rgb(224, 16, 16);
 }
 .titlevote{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: .1rem .3rem;
   margin-top: -10px;
+  /* font-size: 30rem; */
+}
+
+.titlevote h3 {
+  font-size: 20px;
+  
+  
 }
 
 .overview {
   display: none;
   padding: 10px;
-  font-size: 18px;
-  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+  color: #000;
   position: absolute;
   top: 0; /* Align to the bottom */
   left: 0;
   right: 0;
-  background: rgba(190, 94, 94, 0.792);
+  background: rgba(180, 207, 233, 0.651);
   transition: transform 0.3s ease;
   transform: translateY(100%);
 }
@@ -93,34 +105,60 @@ p{
   font-size: 25px;
   margin-top: -5px;
   margin-bottom: 10px;
+
 }
 
 .btn{
-  padding:0.9rem;
-  border:none ;
-  border-radius: 1rem;
-  margin: 1rem;
-  font-size: 20px;
-  background-color: #f12b2bae;
+  background: transparent;
+  border: none;
+  position:absolute;
 }
 
+/* Movieapi.module.css */
+
+/* ... (existing styles) */
+
+.noResults{
+
+margin-left: -200px;
+margin-top: 200px;
+}
+.noResults h1{
+  margin-top: 20px;
+  color: #ff0000; 
+  font-size: 20px;
+  font-weight: bold;
+}
+  
+ 
+
+/* ... (existing styles) */
 
 
 
-@media screen and (max-width:426px){
+/* Responsive Design */
+
+@media screen and (max-width: 1024px){
+h1{
+  margin-left: -80px;
+}
+}
+@media screen and (max-width: 768px){
 .heading{
-  height: 11vh;
+  height: 13vh;
   /* display: flex; */
   flex-direction: column;
   position: sticky;
   left: 0;
-  top: 0;
+  top: 10;
   z-index: 100;
 }   
 h1{
+ 
+
   font-size: 25px;
   margin-left: 0;
-  margin-top: -5px;
+  margin-top: -10px;
   margin-bottom: -10px;
 }
 form input{
@@ -133,3 +171,14 @@ form input{
       color: #fff;
   }
 }
+.noResults{
+  margin-left: 0;
+}
+
+
+/* @media (max-width: 425px) {
+  .beforemaping {
+    flex-direction: column;
+    align-items: center;
+  }
+} */
